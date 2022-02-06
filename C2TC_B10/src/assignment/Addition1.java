@@ -1,0 +1,21 @@
+package assignment;
+import java.util.Scanner;
+public class Addition1 {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter first number");
+		a=sc.nextInt();
+		System.out.println("Enter second number");
+		b=sc.nextInt();
+		c=addition(a,b);
+		System.out.println("addition of two numbers is :" +c);
+	}
+	static int addition(int x,int y)	
+	{
+	return x+y;	
+
+	}
+
+}
