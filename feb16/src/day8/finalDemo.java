@@ -12,7 +12,7 @@ class A{
 	}
 public class finalDemo extends A{
 	
-	@override
+	
 	void m2() {
 	System.out.println("I am method m2 of finalDemo");
 	}
