@@ -1,29 +1,26 @@
 package com.hibernate;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import com.hibernate.project2.Users;
-
+import com.hibernate.project1.User;
 public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(Users.class)
+                .addAnnotatedClass(User.class)
                 .buildSessionFactory();
 
 Session session = factory.getCurrentSession();
 
 try {
 // Create object of entity class type
-Users user = new Users( 5, "Bharath","p","bharath@p.org");
+User user = new User( 3, "Rakshi","Naik","sshah@tns.org");
 // Start transaction
 session.beginTransaction();
 // Perform operation
-session.save(user);
+Session.save(User);
 
 
 // Commit the transaction 
@@ -38,5 +35,4 @@ factory.close();
 
 }
 }
-
 
