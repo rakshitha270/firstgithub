@@ -1,9 +1,9 @@
-package com.cg.smms.repositry;
+package com.cg.shopping.repositry;
 
 
 	import javax.persistence.EntityManager;
 
-	import com.cg.smms.entities.OrderDetails;
+import com.cg.shopping.entities.OrderDetails;
 
 	public class IOrderRepositoryImpl implements IOrderRepository
 	{

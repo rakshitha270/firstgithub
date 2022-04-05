@@ -1,6 +1,7 @@
-package com.cg.smms.repositry;
-import com.cg.smms.entities.Item;
-import com.cg.smms.entities.OrderDetails;
+package com.cg.shopping.repositry;
+
+
+import com.cg.shopping.entities.OrderDetails;
 
 public interface IOrderRepository {
 	public OrderDetails addOrder(OrderDetails order);

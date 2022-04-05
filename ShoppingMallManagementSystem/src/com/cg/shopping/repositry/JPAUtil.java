@@ -1,4 +1,4 @@
-package com.cg.smms.repositry;
+package com.cg.shopping.repositry;
 
 
 	import javax.persistence.EntityManager;
